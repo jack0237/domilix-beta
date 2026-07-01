@@ -579,6 +579,68 @@ body {
   font-size: 12px;
 }
 
+/* ─── Mobile Responsive ────────────────────────────────────────────────────── */
+@media (max-width: 639px) {
+  .hero {
+    padding: 40px 20px 56px;
+    min-height: auto;
+    gap: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  .hero-title br {
+    display: none;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .email-input {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .features,
+  .steps,
+  .faq {
+    padding: 48px 20px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  .success-card {
+    padding: 24px 20px;
+  }
+
+  .steps-list {
+    gap: 8px;
+  }
+
+  .step {
+    padding: 16px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+}
+
 /* ─── Animations ───────────────────────────────────────────────────────────── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(14px); }
